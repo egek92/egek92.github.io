@@ -1,140 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Ege Kuzubasioglu</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ege Kuzubasioglu - Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 60px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header Section */
+        .header {
+            margin-bottom: 80px;
+            position: relative;
+        }
+
+        .social-links {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-links a:hover {
+            opacity: 0.7;
+        }
+
+        .intro-text {
+            margin-left: 80px;
+            margin-top: 20px;
+            max-width: 600px;
+        }
+
+        .intro-text h1 {
+            font-size: 48px;
+            font-weight: normal;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .intro-text p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #cccccc;
+        }
+
+        .location-contact {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #999999;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            margin-top: 80px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-left: 0; /* Remove left margin to align with project links */
+        }
+
+        /* Work Section */
+        .work-section {
+            margin-left: 80px; /* Align with header text */
+        }
+
+        .project-item {
+            margin-bottom: 30px;
+        }
+
+        .project-item h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .project-item h3 a {
+            color: #ffffff;
+            text-decoration: underline; /* Add underline */
+            transition: opacity 0.3s ease;
+        }
+
+        .project-item h3 a:hover {
+            opacity: 0.7;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 40px 20px;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            .intro-text {
+                margin-left: 0;
+                margin-top: 80px;
+            }
+
+            .intro-text h1 {
+                font-size: 36px;
+            }
+
+            .section h2 {
+                margin-left: 0; /* Remove left margin on mobile */
+            }
+
+            .work-section {
+                margin-left: 0; /* Remove left margin on mobile */
+            }
+
+            .social-links {
+                position: relative;
+                flex-direction: row;
+                margin-top: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
+<div class="header">
 
+    <div class="social-links">
+        <a href="mailto:egekuzu@duck.com">Email</a>
+        <a href="https://github.com/egek92" target="_blank">GitHub</a>
+    </div>
 
-
-
-<div id="pdfResume" class="css-vurnku" style="width: 1030px;">
-  <div class="pdf-page pdf-page-1">
-    <header class="pdf-resume-header css-1ktv3f">
-      <h1 class="css-263bh4">Ege Kuzubasioglu</h1>
-      <div class="css-dco7gd"></div>
-      <div class="css-18rbvh1">Utrecht, The Netherlands<div class="css-1ctrvw7"> | </div><br class="css-115v8b2">egekuzu@duck.com</div>
-      <div class="css-18rbvh1"></div>
-      <div class="css-1aygy5b">
-        <div class="css-1tqod0m">
-          <div class="css-1vfn17g">E</div>
-          <div class="css-1vfn17g">K</div>
+    <div class="intro-text">
+        <h1>Ege Kuzubasioglu</h1>
+        <p>10+ years of experience in software development, expertise in designing and delivering high-performance, scalable software across various platforms.</p>
+        <div class="location-contact">
+            Gelderland, The Netherlands
         </div>
-      </div>
-    </header>
-<section class="css-dh6nrk">
-  <h2 class="css-1xecz25">Skills</h2>
-  <div class="css-1cabuyp">
-    <div class="css-1qj1azb">
-      <div class="css-148zj7m">Native Android</div>
-      <div class="css-sbabc">Kotlin
-Java
-Android Architecture Components
-Coroutines
-Flow
-Retrofit
-Okhttp
-Jetpack Compose
-Dagger Hilt
-JUnit
-Mockito
-Espresso</div>
     </div>
-    
-    <div class="css-1qj1azb">
-      <div class="css-148zj7m">Flutter</div>
-      <div class="css-sbabc">Dart
-Bloc
-Redux
-Get_it
-Flutter test
-Mockito</div>
-    </div>
-    
-    <div class="css-1qj1azb">
-      <div class="css-148zj7m">Backend</div>
-      <div class="css-sbabc">Kotlin
-Java
-Spring
-Gradle
-Maven
-GraphQL
-PostgreSQL
-MongoDB
-RabbitMQ
-Apache Kafka
-Docker
-Redis
-Kubernetes
-Prometheus
-Grafana</div>
-    </div>
-  </div>
-</section>
-        <section class="css-17iqz2r">
-          <h2 class="css-1xecz25">Notable Projects</h2>
-          <div class="css-glxl3p">
-            <h2 class="css-d1wi1z"><a href="https://www.ah.nl/over-ah/app" target="_blank" rel="noopener noreferrer nofollow ugc" class="css-aybayc">Albert Heijn App</a></h2>
-            <div class="css-fnjqah"></div>
-            <div class="css-vurnku">
-              <div class="css-vurnku"></div>
-            </div>
-          </div>
-          <div class="css-glxl3p">
-            <h2 class="css-d1wi1z"><a href="https://www.ah.nl/over-ah/winkelservices/zelfscannen" target="_blank" rel="noopener noreferrer nofollow ugc" class="css-aybayc">Albert Heijn Handscanner</a></h2>
-            <div class="css-fnjqah"></div>
-            <div class="css-vurnku">
-              <div class="css-vurnku"></div>
-            </div>
-          </div>
-          <div class="css-glxl3p">
-            <h2 class="css-d1wi1z"><a href="https://www.ah.nl/over-ah/gezondheid/mijn-leefstijlcoach" target="_blank" rel="noopener noreferrer nofollow ugc" class="css-aybayc">Mijn Leefstijlcoach</a></h2>
-            <div class="css-fnjqah"></div>
-            <div class="css-vurnku">
-              <div class="css-vurnku"></div>
-            </div>
-          </div>
-          <div class="css-glxl3p">
-            <h2 class="css-d1wi1z"><a href="https://www.fourthline.com/" target="_blank" rel="noopener noreferrer nofollow ugc" class="css-aybayc">Fourthline Mobile KYC SDK</a></h2>
-            <div class="css-fnjqah"></div>
-            <div class="css-vurnku">
-              <div class="css-vurnku"></div>
-            </div>
-          </div>
-          <div class="css-glxl3p">
-            <h2 class="css-d1wi1z"><a href="https://www.icbc.com.cn/ICBC/EN/default.htm" target="_blank" rel="noopener noreferrer nofollow ugc" class="css-aybayc">ICBC Mobile Banking</a></h2>
-            <div class="css-fnjqah"></div>
-            <div class="css-vurnku">
-              <div class="css-vurnku"></div>
-            </div>
-          </div>
-          <div class="css-glxl3p">
-            <h2 class="css-d1wi1z"><a href="https://www.akbank.com/basvuru/MobileAppService/" target="_blank" rel="noopener noreferrer nofollow ugc" class="css-aybayc">Akbank Mobile Banking</a></h2>
-            <div class="css-fnjqah"></div>
-            <div class="css-vurnku">
-              <div class="css-vurnku"></div>
-            </div>
-          </div>
-          <div class="css-glxl3p">
-            <h2 class="css-d1wi1z"><a href="https://tv.kpn.com/" target="_blank" rel="noopener noreferrer nofollow ugc" class="css-aybayc">KPN iTV</a></h2>
-            <div class="css-fnjqah"></div>
-            <div class="css-vurnku">
-              <div class="css-vurnku"></div>
-            </div>
-          </div>
-          <div class="css-glxl3p">
-            <h2 class="css-d1wi1z"><a href="https://www.signify.com/en-us/lightfinder" target="_blank" rel="noopener noreferrer nofollow ugc" class="css-aybayc">Signify Lightfinder App</a></h2>
-            <div class="css-fnjqah"></div>
-            <div class="css-vurnku">
-              <div class="css-vurnku"></div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-  </div>
 </div>
-  </body>
-</html>
 
+<div class="main-content">
+    <div class="work-section">
+        <div class="section">
+            <h2>Works</h2>
+
+            <div class="project-item">
+                <h3><a href="https://www.ah.nl/over-ah/app" target="_blank">Albert Heijn App</a></h3>
+            </div>
+
+            <div class="project-item">
+                <h3><a href="https://www.ah.nl/over-ah/winkelservices/zelfscannen" target="_blank">Albert Heijn Handscanner</a></h3>
+            </div>
+
+            <div class="project-item">
+                <h3><a href="https://www.ah.nl/over-ah/gezondheid/mijn-leefstijlcoach" target="_blank">Mijn Leefstijlcoach</a></h3>
+            </div>
+
+            <div class="project-item">
+                <h3><a href="https://www.fourthline.com/" target="_blank">Fourthline Mobile KYC SDK</a></h3>
+            </div>
+
+            <div class="project-item">
+                <h3><a href="https://www.icbc.com.cn/ICBC/EN/default.htm" target="_blank">ICBC Mobile Banking</a></h3>
+            </div>
+
+            <div class="project-item">
+                <h3><a href="https://www.akbank.com/basvuru/MobileAppService/" target="_blank">Akbank Mobile Banking</a></h3>
+            </div>
+
+            <div class="project-item">
+                <h3><a href="https://tv.kpn.com/" target="_blank">KPN iTV</a></h3>
+            </div>
+
+            <div class="project-item">
+                <h3><a href="https://www.signify.com/en-us/lightfinder" target="_blank">Signify Lightfinder App</a></h3>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
